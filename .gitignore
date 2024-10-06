@@ -1,5 +1,8 @@
 .csv
 .xlsx
 .mp4
-bhavcopy_old
-.conf
+bhavcopy_old/
+config.conf
+__init__.py
+.png
+.jpge
