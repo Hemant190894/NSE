@@ -7,3 +7,4 @@ __init__.py
 .png
 .jpge
 /.env
+config/config.conf
