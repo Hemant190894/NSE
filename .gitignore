@@ -2,7 +2,8 @@
 .xlsx
 .mp4
 bhavcopy_old/
-config.conf
+/.conf
 __init__.py
 .png
 .jpge
+/.env
