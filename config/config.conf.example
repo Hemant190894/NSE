@@ -1,0 +1,27 @@
+[mysql_database]
+my_database_host = ["Your Localhost"]
+my_database_name = ["Your Database"]
+my_database_port = ["Your Port"]
+my_database_username = ["Your User Name"]
+my_database_password = ["Your Password"]
+my_table = ["Your Table"]    
+
+[bhavcopy_url]
+url = https://archives.nseindia.com/products/content/sec_bhavdata_full_{date}.csv
+
+[file_paths]
+input_path = /Users/hemantdayma/Documents/nse_old/data/input/
+output_path = /Users/hemantdayma/Documents/nse_old/data/output/
+
+[Yearly_high_low]
+high_low_api = https://nsearchives.nseindia.com/content/CM_52_wk_High_low_{date}.csv
+
+[vcp]
+vcp_link_url = https://chartink.com/screener/vcp-lalit
+
+[rocket_base_setup]
+rocket_base_setup_url = https://chartink.com/screener/rocket-base-setup-lalit
+
+[macd]
+macd_url = https://chartink.com/screener/macd-crose-1-hour
+
