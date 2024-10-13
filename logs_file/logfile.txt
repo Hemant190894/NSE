@@ -1,0 +1,300 @@
+
+
+--- Script Started ---
+Received arguments: ['.\\main.py', '2024-10-07', '1']
+Start Date: 2024-10-07
+Number of Days: 1
+Error occurred: I/O operation on closed file.
+Stack trace: Traceback (most recent call last):
+  File "D:\New_Setup_Code\NSE\main.py", line 48, in <module>
+    log_file.write(f"Generated working days: {working_days}\n")
+ValueError: I/O operation on closed file.
+
+
+
+--- Script Started ---
+Received arguments: ['.\\main.py', '2024-10-07', '1']
+Start Date: 2024-10-07
+Number of Days: 1
+Error occurred: I/O operation on closed file.
+Stack trace: Traceback (most recent call last):
+  File "D:\New_Setup_Code\NSE\main.py", line 48, in <module>
+    log_file.write(f"Generated working days: {working_days}\n")
+ValueError: I/O operation on closed file.
+
+
+
+--- Script Started ---
+Received arguments: ['.\\main.py', '2024-10-07', '1']
+Start Date: 2024-10-07
+Number of Days: 1
+Generated working days: ['07102024']
+Data available for processing.
+Data Exported in CSV for 07102024.
+Data Inserted into MySQL for 07102024.
+
+
+--- Script Started ---
+Received arguments: ['d:/New_Setup_Code/NSE/main.py']
+Start Date: 2006
+Number of Days: 1
+Error occurred: strptime() argument 1 must be str, not int
+Stack trace: Traceback (most recent call last):
+  File "d:\New_Setup_Code\NSE\main.py", line 38, in <module>
+    end_date = datetime.strptime(date_str, '%Y-%m-%d')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: strptime() argument 1 must be str, not int
+
+
+
+--- Script Started ---
+Received arguments: ['d:/New_Setup_Code/NSE/main.py']
+Start Date: 2024-10-8
+Number of Days: 1
+Generated working days: ['08102024']
+Data available for processing.
+Data Exported in CSV for 08102024.
+Data Inserted into MySQL for 08102024.
+
+
+--- Script Started ---
+Received arguments: ['main.py', '-10-', '1']
+Start Date: 2024-10-10
+Number of Days: 1
+Generated working days: ['10102024']
+Error occurred: No objects to concatenate
+Stack trace: Traceback (most recent call last):
+  File "D:\New_Setup_Code\NSE\main.py", line 55, in <module>
+    final_df_yearly = year_high_low.process_yearly_high_low(working_days)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New_Setup_Code\NSE\etls\yearly_high_low.py", line 49, in process_yearly_high_low
+    combined_df = self.download_and_concat_yearly_hl(dates_list)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New_Setup_Code\NSE\etls\yearly_high_low.py", line 44, in download_and_concat_yearly_hl
+    final_df = pd.concat(all_data, ignore_index=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New_Setup_Code\NSE\nse_env\Lib\site-packages\pandas\core\reshape\concat.py", line 382, in concat
+    op = _Concatenator(
+         ^^^^^^^^^^^^^^
+  File "D:\New_Setup_Code\NSE\nse_env\Lib\site-packages\pandas\core\reshape\concat.py", line 445, in __init__
+    objs, keys = self._clean_keys_and_objs(objs, keys)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New_Setup_Code\NSE\nse_env\Lib\site-packages\pandas\core\reshape\concat.py", line 507, in _clean_keys_and_objs
+    raise ValueError("No objects to concatenate")
+ValueError: No objects to concatenate
+
+
+
+--- Script Started ---
+Received arguments: ['main.py', '-10-', '1']
+Start Date: 2024-10-10
+Number of Days: 1
+Generated working days: ['10102024']
+Error occurred: No objects to concatenate
+Stack trace: Traceback (most recent call last):
+  File "D:\New_Setup_Code\NSE\main.py", line 55, in <module>
+    final_df_yearly = year_high_low.process_yearly_high_low(working_days)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New_Setup_Code\NSE\etls\yearly_high_low.py", line 49, in process_yearly_high_low
+    combined_df = self.download_and_concat_yearly_hl(dates_list)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New_Setup_Code\NSE\etls\yearly_high_low.py", line 44, in download_and_concat_yearly_hl
+    final_df = pd.concat(all_data, ignore_index=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New_Setup_Code\NSE\nse_env\Lib\site-packages\pandas\core\reshape\concat.py", line 382, in concat
+    op = _Concatenator(
+         ^^^^^^^^^^^^^^
+  File "D:\New_Setup_Code\NSE\nse_env\Lib\site-packages\pandas\core\reshape\concat.py", line 445, in __init__
+    objs, keys = self._clean_keys_and_objs(objs, keys)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New_Setup_Code\NSE\nse_env\Lib\site-packages\pandas\core\reshape\concat.py", line 507, in _clean_keys_and_objs
+    raise ValueError("No objects to concatenate")
+ValueError: No objects to concatenate
+
+
+
+--- Script Started ---
+Received arguments: ['main.py', '-10-', '1']
+Start Date: 2024-10-10
+Number of Days: 1
+Generated working days: ['10102024']
+Error occurred: No objects to concatenate
+Stack trace: Traceback (most recent call last):
+  File "D:\New_Setup_Code\NSE\main.py", line 55, in <module>
+    final_df_yearly = year_high_low.process_yearly_high_low(working_days)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New_Setup_Code\NSE\etls\yearly_high_low.py", line 49, in process_yearly_high_low
+    combined_df = self.download_and_concat_yearly_hl(dates_list)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New_Setup_Code\NSE\etls\yearly_high_low.py", line 44, in download_and_concat_yearly_hl
+    final_df = pd.concat(all_data, ignore_index=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New_Setup_Code\NSE\nse_env\Lib\site-packages\pandas\core\reshape\concat.py", line 382, in concat
+    op = _Concatenator(
+         ^^^^^^^^^^^^^^
+  File "D:\New_Setup_Code\NSE\nse_env\Lib\site-packages\pandas\core\reshape\concat.py", line 445, in __init__
+    objs, keys = self._clean_keys_and_objs(objs, keys)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New_Setup_Code\NSE\nse_env\Lib\site-packages\pandas\core\reshape\concat.py", line 507, in _clean_keys_and_objs
+    raise ValueError("No objects to concatenate")
+ValueError: No objects to concatenate
+
+
+
+--- Script Started ---
+Received arguments: ['main.py', '-10-', '1']
+Start Date: -10-
+Number of Days: 1
+Error parsing arguments: time data '-10-' does not match format '%Y-%m-%d'
+Stack trace: Traceback (most recent call last):
+  File "D:\New_Setup_Code\NSE\main.py", line 38, in <module>
+    end_date = datetime.strptime(date_str, '%Y-%m-%d')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dayma\miniconda3\Lib\_strptime.py", line 554, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dayma\miniconda3\Lib\_strptime.py", line 333, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '-10-' does not match format '%Y-%m-%d'
+
+
+
+--- Script Started ---
+Received arguments: ['.\\main.py', '2024-10-09', '1']
+Start Date: 2024-10-09
+Number of Days: 1
+Generated working days: ['09102024']
+Data available for processing.
+Data Exported in CSV for 09102024.
+Data Inserted into MySQL for 09102024.
+
+
+--- Script Started ---
+Received arguments: ['main.py', '-10-', '1']
+Start Date: -10-
+Number of Days: 1
+Error parsing arguments: time data '-10-' does not match format '%Y-%m-%d'
+Stack trace: Traceback (most recent call last):
+  File "D:\New_Setup_Code\NSE\main.py", line 39, in <module>
+    end_date = datetime.strptime(date_str, '%Y-%m-%d')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dayma\miniconda3\Lib\_strptime.py", line 554, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dayma\miniconda3\Lib\_strptime.py", line 333, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '-10-' does not match format '%Y-%m-%d'
+
+
+
+--- Script Started ---
+Received arguments: ['main.py', '2024-10-09', '1']
+Start Date: 2024-10-09
+Number of Days: 1
+Generated working days: ['09102024']
+Data available for processing.
+Data Exported in CSV for 09102024.
+Data Inserted into MySQL for 09102024.
+
+
+--- Script Started ---
+Received arguments: ['main.py', '2024-10-10', '1']
+Start Date: 2024-10-10
+Number of Days: 1
+Generated working days: ['10102024']
+Data available for processing.
+Data Exported in CSV for 10102024.
+Data Inserted into MySQL for 10102024.
+
+
+--- Script Started ---
+Received arguments: ['main.py', '2024-10-11', '1']
+Start Date: 2024-10-11
+Number of Days: 1
+Generated working days: ['11102024']
+Data available for processing.
+Data Exported in CSV for 11102024.
+Data Inserted into MySQL for 11102024.
+
+
+--- Script Started ---
+Received arguments: ['main.py', '2024-10-13', '1']
+Start Date: 2024-10-13
+Number of Days: 1
+Generated working days: ['11102024']
+Data available for processing.
+Data Exported in CSV for 11102024.
+Data Inserted into MySQL for 11102024.
+
+
+--- Script Started ---
+Received arguments: ['main.py', '2024-10-13', '1']
+Start Date: 2024-10-13
+Number of Days: 1
+Generated working days: ['11102024']
+Data available for processing.
+Data Exported in CSV for 11102024.
+Data Inserted into MySQL for 11102024.
+
+
+--- Script Started ---
+Received arguments: ['.\\main.py', '2024-10-13', '1']
+Start Date: 2024-10-13
+Number of Days: 1
+Generated working days: ['11102024']
+Data available for processing.
+Error occurred: 'Series' object has no attribute 'strftime'
+Stack trace: Traceback (most recent call last):
+  File "D:\New_Setup_Code\NSE\main.py", line 70, in <module>
+    mvr_data = transformed_chartlink.chartlink_Transformation()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New_Setup_Code\NSE\data_transformer\data_transformation.py", line 73, in chartlink_Transformation
+    self.raw_data['Days'] = self.raw_data['stock_date'].strftime("%a")
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New_Setup_Code\NSE\nse_env\Lib\site-packages\pandas\core\generic.py", line 6299, in __getattr__
+    return object.__getattribute__(self, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Series' object has no attribute 'strftime'. Did you mean: 'at_time'?
+
+
+
+--- Script Started ---
+Received arguments: ['.\\main.py', '2024-10-13', '1']
+Start Date: 2024-10-13
+Number of Days: 1
+Generated working days: ['11102024']
+Data available for processing.
+Error occurred: 'Series' object has no attribute 'strftime'
+Stack trace: Traceback (most recent call last):
+  File "D:\New_Setup_Code\NSE\main.py", line 70, in <module>
+    mvr_data = transformed_chartlink.chartlink_Transformation()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New_Setup_Code\NSE\data_transformer\data_transformation.py", line 73, in chartlink_Transformation
+    self.raw_data['Days'] = self.raw_data['stock_date'].strftime("%a")
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New_Setup_Code\NSE\nse_env\Lib\site-packages\pandas\core\generic.py", line 6299, in __getattr__
+    return object.__getattribute__(self, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Series' object has no attribute 'strftime'. Did you mean: 'at_time'?
+
+
+
+--- Script Started ---
+Received arguments: ['.\\main.py', '2024-10-13', '1']
+Start Date: 2024-10-13
+Number of Days: 1
+Generated working days: ['11102024']
+Data available for processing.
+Error occurred: 'Series' object has no attribute 'strftime'
+Stack trace: Traceback (most recent call last):
+  File "D:\New_Setup_Code\NSE\main.py", line 70, in <module>
+    mvr_data = transformed_chartlink.chartlink_Transformation()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New_Setup_Code\NSE\data_transformer\data_transformation.py", line 73, in chartlink_Transformation
+    self.raw_data['Days'] = self.raw_data['stock_date'].strftime("%a")
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\New_Setup_Code\NSE\nse_env\Lib\site-packages\pandas\core\generic.py", line 6299, in __getattr__
+    return object.__getattribute__(self, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Series' object has no attribute 'strftime'. Did you mean: 'at_time'?
+

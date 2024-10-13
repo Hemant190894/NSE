@@ -69,9 +69,12 @@ class ChartlinkTransformation:
         if self.raw_data is not None and not self.raw_data.empty:
             # Add the stock_date column with the current date in "YYYY-MM-DD" format
             self.raw_data['stock_date'] = datetime.now().strftime("%Y-%m-%d")
+
+            self.raw_data['Days'] = self.raw_data['stock_date'].strftime("%a")
+
             # Filter data based on scan_type and select only the required columns
             # Filter columns for insertion
-            relevant_columns = ['nsecode', 'per_chg', 'stock_date', 'scan_type']
+            relevant_columns = ['nsecode', 'per_chg', 'stock_date', 'scan_type','Days']
 
             # Select only the relevant columns
             filtered_df = self.raw_data[relevant_columns]

@@ -90,12 +90,25 @@ class DataExporter:
                 cursor.close()
                 connection.close()
 
-    def insert_mvr_data(self,df):
+    def insert_mvr_data(self, df):
+        print("-",*100)
         try:
+            weekend_days = ['Sat', 'Sun']
+            
+            # Filter out rows with 'Sat' or 'Sun' in the 'Days' column
+            df = df[~df['Days'].isin(weekend_days)]
+            
+            # If there's no data left to process after filtering, exit the function
+            if df.empty:
+                print("No data to process after filtering out weekends.")
+                
+            # Proceed with processing the remaining data
             connection = self.create_connection()
             if connection is None:
                 return  # Exit if connection failed
+            
             cursor = connection.cursor()
+
             for scan_type, group_df in df.groupby('scan_type'):
                 if scan_type == 'macd':
                     table_name = 'macd_data'
@@ -106,6 +119,7 @@ class DataExporter:
                 else:
                     print("Found Extra scan_type in dataframe")
                     continue
+
                 # Drop scan_type column before inserting
                 group_df = group_df.drop(columns=['scan_type'], errors='ignore')
 
@@ -116,9 +130,10 @@ class DataExporter:
                 # Insert data row by row
                 for row in group_df.itertuples(index=False, name=None):
                     cursor.execute(sql, row)
+            
             # Commit the transaction
             connection.commit()
-            print(f"Data successfully inserted into {self.table_name} table.")
+            print(f"Data successfully inserted into the {table_name} table.")
 
         except Error as e:
             print(f"Failed to insert data into MySQL: {e}")
@@ -126,3 +141,4 @@ class DataExporter:
         finally:
             # Close the database connection
             self.close_connection(connection)
+
